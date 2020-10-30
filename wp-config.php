@@ -11,6 +11,10 @@ if (
 	(array_key_exists('HTTP_HOST', $_SERVER)) &&
 	(strpos($_SERVER['HTTP_HOST'], 'localhost') !== false)
 ) {
+
+	require_once(dirname(__FILE__) . '/wp-config/wp-config-localhost.php');
+
+} elseif (!array_key_exists('HTTP_HOST', $_SERVER)) {
 	require_once(dirname(__FILE__) . '/wp-config/wp-config-localhost.php');
 
 } else {
