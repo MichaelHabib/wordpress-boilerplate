@@ -7,19 +7,7 @@
  * otherwise, load production config
  * */
 
-if (
-	(array_key_exists('HTTP_HOST', $_SERVER)) &&
-	(strpos($_SERVER['HTTP_HOST'], 'localhost') !== false)
-) {
-
-	require_once(dirname(__FILE__) . '/wp-config/wp-config-localhost.php');
-
-} elseif (!array_key_exists('HTTP_HOST', $_SERVER)) {
-	require_once(dirname(__FILE__) . '/wp-config/wp-config-localhost.php');
-
-} else {
-	require_once(dirname(__FILE__) . '/wp-config/wp-config-production.php');
-}
+require_once(__DIR__ . '/wp-config/wp-config-conditions.php');
 
 
 /** Absolute path to the WordPress directory. */

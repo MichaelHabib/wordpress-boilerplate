@@ -18,6 +18,22 @@
  * @package WordPress
  */
 
+//define('WP_SITEURL', 'http://example.com/');
+//define('WP_HOME', WP_SITEURL);
+//define('WP_CONTENT_DIR', ABSPATH . 'wp-content');
+//
+////define('FS_METHOD', 'direct');
+//define('WP_DEBUG', true);
+//define('WP_DEBUG_DISPLAY', true);
+//define('WP_DEBUG_LOG', true);
+////define('WP_DISABLE_FATAL_ERROR_HANDLER', false);
+//define('SCRIPT_DEBUG', true);
+//define('DISALLOW_FILE_EDIT', true);
+//define('DISALLOW_FILE_MODS', true);
+
+//define('ALLOW_UNFILTERED_UPLOADS', true);
+
+
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define( 'DB_NAME', 'database_name_here' );
@@ -77,5 +93,5 @@ $table_prefix = 'wp_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define( 'WP_DEBUG', false );
+//define( 'WP_DEBUG', false );
 
