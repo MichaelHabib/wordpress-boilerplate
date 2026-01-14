@@ -13,8 +13,13 @@ readme.html
 
 !wp-config.php
 !wp-config
+!wp-config/
 !wp-config/*
+!wp-config/index.html
+!wp-config/.gitignore
 
+!wp-cli-scripts/
+!wp-cli-scripts/*
 
 
 # IDE & Dev Tools File to ignore
