@@ -3,7 +3,8 @@
 # Copy into projects as needed. Always refer to the link above for latest version.
 # NS: Keep the above link always up to date with latest rules.
 
-# Project Specific Rules
+## Project Specific Rules
+##################################################
 wp-*
 wp
 xmlrpc.php
@@ -21,43 +22,46 @@ readme.html
 !wp-cli-scripts/
 !wp-cli-scripts/*
 
+## IDE & Dev Tools File to ignore
+##################################################
 
-# IDE & Dev Tools File to ignore
 **/nbproject
 **/*.sublime-*
 **/.project
 **/Vagrantfile
 **/.vagrant*
 **/.idea/
-**/travis*.log*
-**/.ddev
+**/.ddev/
 
-# PHP files and folders
+## PHP files and folders
+##################################################
+
 **/vendor
-!**/vendor_local/
-!**/vendor_local/**
 
-# Common developer tools
+## Common developer tools
+##################################################
+
 **/composer.phar
 **/php-cs-fixer.phar
 **/scrutinizer.phar
 
-# Node & Front-end Dev
+## Node & Front-end Dev
+##################################################
+
 **/.sass-cache
 **/bower_components
-**/node_modules/
-!**/node_modules_local/
-!**/node_modules_local/**
+**/node_modules
 **/npm-debug.log
 
-# File-system cruft and temporary files
+## File-system cruft and temporary files
+##################################################
+
 **/.*.swp
 **/.buildpath
 **/.swp
 **/__*
 
-
-# OS generated files #
+## OS generated files #
 ##################################################
 **/.DS_Store
 **/.DS_Store?
@@ -67,7 +71,7 @@ readme.html
 **/ehthumbs.db
 **/Thumbs.db
 
-# Packages #
+## Packages #
 ##################################################
 # it's better to unpack these files and commit the raw source
 # git has its own built in compression methods
@@ -80,9 +84,6 @@ readme.html
 **/*.tar
 **/*.zip
 
-
-
-# Credit & Sources
-## https://gist.github.com/octocat/9257657
-## https://stackoverflow.com/questions/18393498/gitignore-all-the-ds-store-files-in-every-folder-and-subfolder
-
+## Credit & Sources
+## - https://gist.github.com/octocat/9257657
+## - https://stackoverflow.com/questions/18393498/gitignore-all-the-ds-store-files-in-every-folder-and-subfolder instructuins
