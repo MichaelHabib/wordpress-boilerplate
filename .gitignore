@@ -12,11 +12,11 @@ license.txt
 readme.html
 
 !wp-config.php
-!wp-config
 !wp-config/
-!wp-config/*
+!wp-config.example
 !wp-config/index.html
 !wp-config/.gitignore
+!wp-config/*.example.php
 
 !wp-cli-scripts/
 !wp-cli-scripts/*
