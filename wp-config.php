@@ -7,18 +7,14 @@
  * otherwise, load production config
  * */
 
+
 if (
-	(array_key_exists('HTTP_HOST', $_SERVER)) &&
-	(strpos($_SERVER['HTTP_HOST'], 'localhost') !== false)
+    (array_key_exists('HTTP_HOST', $_SERVER)) &&
+    (strpos($_SERVER['HTTP_HOST'], 'ddev.site') !== false)
 ) {
-
-	require_once(dirname(__FILE__) . '/wp-config/wp-config-localhost.php');
-
-} elseif (!array_key_exists('HTTP_HOST', $_SERVER)) {
-	require_once(dirname(__FILE__) . '/wp-config/wp-config-localhost.php');
-
+    require_once(dirname(__FILE__) . '/wp-config/wp-config-localhost.php');
 } else {
-	require_once(dirname(__FILE__) . '/wp-config/wp-config-production.php');
+    require_once(dirname(__FILE__) . '/wp-config/wp-config-production.php');
 }
 
 
